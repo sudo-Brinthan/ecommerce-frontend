@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <img src="assets/image1.png" alt="MyBrand Logo" />
+    </a>
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="index.html#products">Products</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+    <div class="header-right">
+      <input type="text" placeholder="Search..." class="search-bar" />
+      <div class="cart-icon">
+        🛒 <span class="badge" id="cart-count">0</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Checkout Form -->
+  <section class="product-detail-section">
+    <div class="product-detail-container">
+      <div class="product-detail-info">
+        <h1>Checkout</h1>
+        <form id="checkout-form">
+          <label>Name:</label><br />
+          <input type="text" id="name" required /><br />
+
+          <label>Email:</label><br />
+          <input type="email" id="email" required /><br />
+
+          <label>Address:</label><br />
+          <textarea id="address" rows="3" required></textarea><br />
+
+          <label>Payment Method:</label><br />
+          <select id="payment" required>
+            <option value="">Select</option>
+            <option value="credit">Credit Card</option>
+            <option value="cod">Cash on Delivery</option>
+          </select><br /><br />
+
+          <p>Total Amount: $<span id="checkout-total">0.00</span></p>
+          <button type="submit" class="add-to-cart">Place Order</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="scripts/checkout.js"></script>
+</body>
+</html>

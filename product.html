@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products - Fashion E-Commerce</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <img src="assets/image1.png" alt="MyBrand Logo" />
+    </a>
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="header-right">
+      <input type="text" placeholder="Search..." class="search-bar" />
+      <div class="cart-icon" onclick="location.href='cart.html'">
+        🛒 <span class="badge" id="cart-count">0</span>
+      </div>
+      <div class="hamburger-menu" tabindex="0" role="button" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- Product Grid Section -->
+  <section class="product-grid-section">
+    <h2 class="section-heading">Explore Our Collection</h2>
+
+    <!-- Loader -->
+    <div id="loader" class="loader">Loading products...</div>
+
+    <!-- Error Message -->
+    <div id="error-message" class="error-message" style="display: none;">
+      Sorry, we couldn't load the products. Please try again later.
+    </div>
+
+    <!-- Dynamic Product Grid -->
+    <div id="product-grid" class="product-grid"></div>
+  </section>
+
+  <!-- External JS -->
+  <script src="scripts/app.js"></script>
+</body>
+</html>
