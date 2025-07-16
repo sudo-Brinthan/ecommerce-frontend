@@ -1,76 +1,138 @@
 /* auth.css */
 
-/* Container styles for login/signup forms */
-.auth-container {
-  max-width: 400px;
-  margin: 80px auto;
-  padding: 40px;
-  background-color: #ffffff;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  text-align: center;
+/* General Body Styles */
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.auth-container h2 {
-  font-size: 2rem;
+/* Form Container */
+.form-container {
+  background-color: #ffffff;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* Page Title (Login/Sign Up) */
+.form-container h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.form-container p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Input Fields */
+.input-group {
   margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #ff6600;
+  box-shadow: 0 0 0 4px rgba(255, 102, 0, 0.1);
+}
+
+/* Password wrapper for the toggle icon */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  padding-right: 50px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  width: 48px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.toggle-password:hover {
   color: #333;
 }
 
-.auth-container form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.auth-container input[type="email"],
-.auth-container input[type="password"],
-.auth-container input[type="text"] {
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+/* Submit Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 15px;
   font-size: 1rem;
-}
-
-.auth-container input:focus {
-  border-color: #ff6600;
-  outline: none;
-  box-shadow: 0 0 5px rgba(255, 102, 0, 0.4);
-}
-
-.auth-container button {
-  background-color: #ff6600;
-  color: white;
-  padding: 12px;
-  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(45deg, #ff6600, #ff8c3c);
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
 }
 
-.auth-container button:hover {
-  background-color: #e65c00;
+button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 102, 0, 0.4);
 }
 
-.auth-container .link {
-  margin-top: 15px;
-  font-size: 0.9rem;
+/* Helper text and links */
+.form-footer {
+  margin-top: 25px;
+  font-size: 0.95rem;
+  color: #555;
 }
 
-.auth-container .link a {
+.form-footer a {
   color: #ff6600;
+  font-weight: 600;
   text-decoration: none;
+  transition: text-decoration 0.2s;
 }
 
-.auth-container .link a:hover {
+.form-footer a:hover {
   text-decoration: underline;
-}
-
-/* Responsive */
-@media (max-width: 500px) {
-  .auth-container {
-    margin: 40px 20px;
-    padding: 30px;
-  }
 }

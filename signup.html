@@ -1,30 +1,44 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sign Up</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Sign Up - MyBrand</title>
+  <link rel="stylesheet" href="styles/auth.css" />
 </head>
 <body>
   <div class="form-container">
-    <h2>Sign Up</h2>
+    <h2>Create an Account</h2>
+    <p>Join us and start shopping today!</p>
+    
     <form id="signup-form">
-      <label>Full Name</label>
-      <input type="text" name="fullname" required />
+      <div class="input-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+      </div>
 
-      <label>Email</label>
-      <input type="email" name="email" required />
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+      </div>
 
-      <label>Password</label>
-      <input type="password" name="password" id="signup-password" required />
-      <div id="strength-message"></div>
+      <div class="input-group">
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" name="password" placeholder="Create a strong password" required />
+        <div id="strength-message"></div>
+      </div>
 
-      <label>Confirm Password</label>
-      <input type="password" name="confirm-password" required />
+      <div class="input-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required />
+      </div>
 
       <button type="submit">Sign Up</button>
     </form>
-    <p>Already have an account? <a href="login.html">Login</a></p>
+    
+    <div class="form-footer">
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
   </div>
 </body>
 </html>
