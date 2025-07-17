@@ -69,33 +69,16 @@ You will need a web browser and a code editor (like VS Code).
 
 ---
 
-## 📂 File Structure
+## 📄 Project Pages
 
-Here is the basic structure of the project:
+A brief overview of the key pages included in this project:
 
-
-ecommerce-frontend/
-├── assets/
-│   └── (images, logos, etc.)
-├── scripts/
-│   ├── app.js         # Main application logic, product fetching
-│   ├── auth.js        # Handles Firebase login/signup
-│   ├── cart.js        # Shopping cart functionality
-│   ├── checkout.js    # Checkout page logic
-│   └── firebase-config.js # Firebase project keys
-├── styles/
-│   ├── main.css       # Main stylesheet
-│   └── auth.css       # Styles for login/signup pages
-├── about.html
-├── cart.html
-├── checkout.html
-├── contact.html
-├── index.html
-├── login.html
-├── product.html
-├── signup.html
-└── README.md
-
+-   **Home Page (`index.html`):** The main landing page featuring a hero banner and navigation.
+-   **Products Page (`product.html`):** Displays all available products fetched from the API in a responsive grid.
+-   **Login & Signup Pages (`login.html`, `signup.html`):** Secure user authentication forms powered by Firebase.
+-   **Shopping Cart (`cart.html`):** Allows users to view, update quantities, and remove items from their cart.
+-   **Checkout Page (`checkout.html`):** A simple form for users to proceed with their order.
+-   **About & Contact Pages:** Static pages providing more information about the brand and how to get in touch.
 
 ---
 
